@@ -44,7 +44,23 @@ var contadorValores= lista.length;
 alert("La lista tiene: " + contadorValores +" elementos ")
 console.log("La lista tiene: " + contadorValores +" elementos ");
 
-/*4. Crea un programa que declare un lista de nombres de frutas. Luego, elimina la primera fruta, ahora cambia el valor de la segunda fruta que ahora esta de primero en la lista, inserta una nueva fruta al final de la lista y muestra toda la lista en consola.
+/*4. Crea un programa que declare un lista de nombres de frutas. Luego, elimina la primera fruta, ahora cambia el valor de la segunda fruta que ahora esta de primero en la lista, inserta una nueva fruta al final de la lista y muestra toda la lista en consola.*/
 
+var frutas=['Mango', 'Mora', 'Banano', 'Mandarina', 'Guanabana']
+alert(frutas)
+console.log(frutas);
+frutas.shift()
+console.log(frutas);
+alert (frutas);
+frutas.push(prompt('Ingresa una fruta'));
+console.log(frutas);
+alert(frutas)
 /*5. Declara un objeto que represente a una persona con propiedades como nombre, edad y dirección. Luego, muestra la información de la persona en la consola accediendo directamente a sus propiedades. El mensaje debe decir algo como: `Juan tiene 45 años y vive en la calle 63 con carrera 24`
  */
+
+var persona =  {
+    Nombre: prompt('Ingresa el nombre de una persona '),
+    edad: parseInt(prompt('Ingresa la edad de esa persona')),
+    direccion: prompt('Cual es la direccion de esa persona?')
+}
+alert(persona.Nombre+' tiene '+persona.edad + ' anios y vive en la '+persona.direccion)
