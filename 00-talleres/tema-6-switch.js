@@ -10,26 +10,25 @@
    var nota2 = parseFloat(prompt ('Ingrese segunda nota'));
    var nota3 = parseFloat(prompt('Ingresa la tercera nota'));
    var promedio=(nota1+nota2+nota3)/3;
-   let mensaje 
-   switch (promedio) {
+   
+   switch (true) {
     case promedio > 0 && promedio < 2.5:
-        mensaje= promedio + " Insuficiente, has perdido la materia";
+        console.log(promedio + " Insuficiente, has perdido la materia");
         break;
     case  promedio >= 2.5 && promedio < 3.5:
-        mensaje= promedio + " Insuficiente, tienes derecho a habilitar"
+        console.log(promedio + " Insuficiente, Puedes habilitar");
         break;
     case promedio >= 3.5 && promedio < 4.0:
-        mensaje = promedio + " Aceptable";
+        console.log(promedio + " Aceptablke, ");
         break;
     case promedio>= 4.1 && promedio<= 5.0:
-        mensaje= promedio + " Excelente";
+        console.log(promedio + " Excelente "); 
         break;
     default:
-        mensaje= promedio + ' Nota no valida';
+        console.log(promedio + " Notas no validas");
         break;
    }
-   alert(mensaje);
-   console.log(mensaje);
+ 
 
    /*if (promedio>5) {
     console.log(promedio + ' Notas no validas');    
