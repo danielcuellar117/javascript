@@ -228,25 +228,6 @@ function ejercicio7() {
 }
 
 // Ejercicio 8: Utilizar clases para gestionar la información de un grupo de estudiantes
-class GrupoEstudiantes {
-  constructor() {
-    this.estudiantes = [];
-  }
-
-  agregarEstudiante(estudiante) {
-    this.estudiantes.push(estudiante);
-  }
-
-  calcularPromedioNotas() {
-    const promedios = [];
-    for (const estudiante of this.estudiantes) {
-      const promedio = estudiante.materias.reduce((sum, materia) => sum + materia.nota, 0) / estudiante.materias.length;
-      promedios.push({ nombre: estudiante.nombre, promedio });
-    }
-    return promedios;
-  }
-}
-
 function ejercicio8() {
   const grupo = new GrupoEstudiantes();
 
