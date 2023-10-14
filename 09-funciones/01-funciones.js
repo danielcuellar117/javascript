@@ -39,6 +39,3 @@ function promedioEstudiante() {
 }
 
 promedioEstudiante();       // Invoca, ejecuta, corre
-promedioEstudiante();
-promedioEstudiante();
-promedioEstudiante();
